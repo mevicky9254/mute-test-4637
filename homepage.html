@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="homepage.css">
     <script src="https://kit.fontawesome.com/bd04bdd829.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,364 +14,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap"
+    
         rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            background-color: rgb(238, 238, 234);
-        }
-
-        .tagline {
-            width: 100%;
-            width: 100%;
-            height: auto;
-            background-color: rgb(67, 113, 17);
-            color: white;
-            text-align: center;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-
-        .tagline>p {
-            font-family: 'Open Sans', sans-serif;
-            background-color: rgb(67, 113, 17);
-
-        }
-
-
-        .navbar {
-            width: 100%;
-            height: auto;
-            /* border: 1px solid red; */
-            background-color: rgb(238, 238, 234);
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .navbar>div {
-            width: 25%;
-
-            height: auto;
-            border: 1px solid blue;
-        }
-
-        .left {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .left>div {
-            border: 1px solid red;
-            height: auto;
-            width: 30%;
-            display: flex;
-
-            align-items: center;
-        }
-
-        #shop {
-            width: 100%;
-            font-size: 20px;
-            border-color: none;
-            border: 1px solid rgb(238, 238, 234);
-            background-color: rgb(238, 238, 234);
-            cursor: pointer;
-        }
-
-        #learn {
-            width: 100%;
-            font-size: 20px;
-            border-color: none;
-            border: 1px solid rgb(238, 238, 234);
-            background-color: rgb(238, 238, 234);
-            cursor: pointer;
-        }
-
-        .grow {
-
-            font-size: 20px;
-        }
-
-        .mid>img {
-            width: 60%;
-            margin-left: 60px;
-        }
-
-        .right {
-            display: flex;
-        }
-
-        .right>div:nth-child(1) {
-            width: 40%;
-            border: 1px solid blue;
-            display: flex;
-            align-items: center;
-        }
-
-        .right>div:nth-child(1)>div:nth-child(1) {
-            width: 30%;
-            border: 1px solid pink;
-
-        }
-
-        .right>div:nth-child(1)>div:nth-child(2) {
-            width: 70%;
-            border: 1px solid rgb(241, 255, 192);
-            text-transform: capitalize;
-        }
-
-        .right>div:nth-child(1)>div:nth-child(1)>img {
-            width: 100%;
-        }
-
-        .right>div:nth-child(2) {
-            width: 60%;
-            border: 1px solid blue;
-            display: flex;
-            align-items: center;
-        }
-
-        .right>div:nth-child(2)>div {
-            width: 33%;
-            height: auto;
-            border: 1px solid red;
-            justify-content: space-evenly;
-            display: flex;
-            align-items: center;
-
-        }
-
-        /* ....................banner............... */
-        .banner {
-            width: 99.8%;
-            border: 1px solid black;
-            height: 600px;
-            margin: auto;
-        }
-
-
-
-
-        /* ........................................heading............. */
-        .heading {
-            width: 99.8%;
-            border: 1px solid black;
-            height: 300px;
-            margin: auto;
-            background-color: rgb(238, 238, 234);
-        }
-
-        .heading>div {
-            width: 40%;
-            /* border: 1px solid blue; */
-            text-align: center;
-            margin: auto;
-            margin-top: 130px;
-        }
-
-        .heading>div>h1 {
-
-            color: #222;
-            font-family: 'Rubik Dirt', cursive;
-            margin-bottom: 25px;
-            font-size: 35px;
-
-        }
-
-        h2 {
-            color: #222;
-            font-family: 'Rubik Dirt', cursive;
-        }
-
-        .heading>div>p {
-            font-size: 20px;
-            font-family: 'Open Sans', sans-serif;
-        }
-
-        p {
-            font-size: 17px;
-            font-family: 'Open Sans', sans-serif;
-        }
-
-
-
-
-        .sampleline1 {
-            width: 80%;
-
-            margin: auto;
-            /* border: 1px solid red; */
-            height: auto;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 50px;
-            margin-top: 30px;
-
-
-        }
-
-        .sampleline1>div {
-            /* border: 1px solid blue; */
-            height: auto;
-
-            text-align: center;
-        }
-
-        .sampleline1>div>img {
-            width: 100%;
-            border-radius: 30px;
-        }
-
-        .sampleline1>div>button {
-            font-size: 17px;
-
-            background: #cd171f;
-            padding: 12px 35px;
-            border-color: none;
-            border-radius: 10px;
-            border: 0px solid #cd171f;
-            color: white;
-            margin-top: 20px;
-        }
-
-        .sampleline1>div>h2 {
-            margin-top: 20px;
-        }
-
-        .sampleline1>div>p {
-            margin-top: 20px;
-        }
-
-
-        .sampleline2 {
-            width: 55%;
-
-            margin: auto;
-            /* border: 1px solid red; */
-            height: auto;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 50px;
-            margin-top: 70px;
-
-
-        }
-
-        .sampleline2>div {
-            /* border: 1px solid blue; */
-            height: auto;
-
-            text-align: center;
-        }
-
-        .sampleline2>div>img {
-            width: 100%;
-            border-radius: 30px;
-        }
-
-        .sampleline2>div>button {
-            font-size: 17px;
-
-            background: #cd171f;
-            padding: 12px 35px;
-            border-color: none;
-            border-radius: 10px;
-            border: 0px solid #cd171f;
-            color: white;
-            margin-top: 20px;
-        }
-
-        .sampleline2>div>h2 {
-            margin-top: 20px;
-        }
-
-        .sampleline2>div>p {
-            margin-top: 20px;
-        }
-
-        .mikai {
-            width: 99.8%;
-            
-            margin-top: 60px;
-            height: auto;
-            /* border: 1px solid red; */
-           display: flex;
-           justify-content: space-around;
-           background-color: #437111;
-         
-        }
-
-        .mikai>div {
-            width: 40%;
-            height: auto;
-            /* border: 1px solid blue; */
-            background-color: #437111;
-            margin-top: 60px;
-        
-
-            
-        }
-        .mikai>div:nth-child(1)>img {
-            width: 100%;
-            background-color: #437111;
-        }
-        .mikai>div:nth-child(2)>h1 {
-            color: #222;
-            font-family: 'Rubik Dirt', cursive;
-            margin-bottom: 25px;
-            font-size: 35px;
-            text-align: center;
-        }
-
-        .mikai>div:nth-child(2)>h1>span {
-            color: red;
-            background-color: #437111;
-        }
-        .mikai>div:nth-child(2)>p{
-            margin-top: 30px;
-            font-size: 20px;
-            line-height: 40px;
-            color: aliceblue;
-            background-color: #437111;
-            
-        }
-        .mikai>div:nth-child(2)>div{
-            width: 70%;
-            margin-top: 20px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            margin-bottom: 30px;
-            padding-left: 20px;
-        }
-        .mikai>div:nth-child(2)>h1{
-            background-color: #437111;
-        }
-        .mikai>div:nth-child(2)>div>h2>span{
-            color: #cd171f;
-            
-        }
-        .mikai>div:nth-child(2)>button{
-            font-size: 17px;
-
-            background: wheat;
-            padding: 12px 35px;
-            border-color: none;
-            border-radius: 20px;
-            border: 0px solid #cd171f;
-            color:rgba(0, 0, 0, 0.644);
-            margin-top: 20px;
-        }
-        .mikai>div:nth-child(2)>button:hover{
-            background-color: #222;
-            color: bisque;
-            cursor: pointer;
-        }
-
-        
-    </style>
+    
 </head>
 
 <body>
@@ -440,7 +86,20 @@
     <!-- ...................banner.................. -->
 
 
-    <div class="banner"></div>
+    <div class="banner">
+        <div>
+            <div>
+                <h1>CAN'T KEEP CALM </h1>
+                <h1>KIMAYE VEGGIES NOW LIVE</h1>
+                <button>Shop Now</button>
+            </div>
+
+        </div>
+        <div>
+            <img src="https://www.freepnglogos.com/uploads/vegetables-png/buy-high-quality-organic-vegetables-and-fruits-online-7.png"
+                alt="">
+        </div>
+    </div>
 
     <!-- ............................................................................................................. -->
     <div class="heading">
@@ -513,15 +172,172 @@
             <p>Since 2009, we have set the benchmark for fruit safety and quality in 35 countries. Kimaye is now
                 expanding its footprint in India, bringing you multiple varieties of fruit and vegetables that are
                 grown, packaged, and delivered in the safest and most socially responsible manner.</p>
-            <div><h2>Kimaye is #all<span>Safe</span>#all<span> Good</span> </h2></div>
-                
-                <button>KNOW MORE</button>
+            <div>
+                <h2>Kimaye is #all<span>Safe</span>#all<span> Good</span> </h2>
+            </div>
+
+            <button>KNOW MORE</button>
+        </div>
+
+    </div>
+
+    <!-- .................heading...... -->
+    <div class="heading2">
+        <div>
+            <h1>THE SECRET’S OUT: WE’RE SUPER SAFE</h1>
+            <p>Witness Our Journey</p>
+        </div>
+    </div>
+
+
+    <!-- .........................location proofs............................ -->
+
+    <div class="proof">
+        <div>
+            <h3>Grown <br>
+                responsibly</h3>
+            <p>
+                We follow G.A.P (Good Agricultural Practices) to ensure food safety.</p>
+        </div>
+        <div><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/secret-1_guetzli-min.jpg?v=1614755149"
+                alt=""></div>
+    </div>
+
+    <div class="proof">
+        <div>
+            <h3>Handpicked
+                at <br>farms02
+            </h3>
+            <p>
+                2
+                Our trained Harvesting Supervisors ensure only the best fruits are picked.</p>
+        </div>
+        <div><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/secret-2_guetzli-min.jpg?v=1622009925"
+                alt=""></div>
+    </div>
+
+    <div class="proof">
+        <div>
+            <h3>Earning <br>
+                the Kimaye badge</h3>
+            <p>
+
+                Stringent quality checks at our automated pack house ensure only the best fruits go through.</p>
+        </div>
+        <div><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/secret-3_guetzli-min.jpg?v=1614755148"
+                alt=""></div>
+    </div>
+
+    <div class="proof">
+        <div>
+            <h3>Zero-touch <br>
+                processs</h3>
+            <p>
+
+                The fruits are then packaged and delivered fresh in a contamination-free environment.
+            </p>
+        </div>
+        <div><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/secret-4_guetzli-min.jpg?v=1622009925"
+                alt=""></div>
+    </div>
+
+    <div class="proof">
+        <div>
+            <h3>Finally
+            </h3>
+            <p>
+
+                Tell us all about how you enjoy our fruits using #all <span>Safe</span> #all <span>Good</span> </p>
+        </div>
+        <div><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/secret-5_guetzli-min.jpg?v=1622009925"
+                alt=""></div>
+    </div>
+    <!-- ,..................................heading 3 -->
+    <div class="heading3">
+
+        <h1>JAZZ IT UP WITH FRUITS</h1>
+    </div>
+
+
+    <!-- ;;;;;;;;adddd -->
+    <div class="add">
+        <div>
+            <div>
+                Top safety fruits you should be swearing by everytime you conasume.
+            </div>
+        </div>
+        <div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- .......heading -->
+
+    <div class="heading2">
+        <div>
+            <h1>PSST… LOOKIN’ FOR US?</h1>
+            <p>We are here</p>
+        </div>
+    </div>
+    <!-- .................lower box -->
+    <div class="lower">
+        <div><img
+                src="https://scontent.cdninstagram.com/v/t51.29350-15/309054314_1229843461130059_6767642589970424508_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=WApb0OlARRUAX9DzasH&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT-4STawWkQMhAEyNTC8m9K8sxFigehChhWVCjtz8Io7GA&oe=633A6795"
+                alt=""></div>
+        <div><img
+                src="https://scontent.cdninstagram.com/v/t51.2885-15/308242009_627690715662833_2753882093615433373_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=w0oFBuWqPpQAX-yPKcv&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9oK0cCNQZxumn3LHReR7d5aDybjIHeCKOVZHLReoquvw&oe=633B4AB3"
+                alt=""></div>
+        <div><img
+                src="https://scontent.cdninstagram.com/v/t51.2885-15/307823991_497520348493591_204488300934979999_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=2yEOfzARl-sAX_Vel-r&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT8uK549xBGZTk8CpPehxTWSlmBIobnhpBwC_1GIyya3pQ&oe=63396E66"
+                alt=""></div>
+        <div><img
+                src="https://scontent.cdninstagram.com/v/t51.2885-15/308239755_167528012526634_7513287408235458277_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=IM24KBARTLgAX90lzqm&_nc_oc=AQl4D_luXJVd0BQ47tNom2l-6N-X9VWPBgLRZtcHpsFnIacoAtMQJ2fmjHPmYZsanA4&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT914eM9i0bL3FPHqSjXQSIDPYGFr0Q9-i7tKymnbzmOvw&oe=633A8562"
+                alt=""></div>
+    </div>
+
+
+    <!-- .........................footer -->
+    <div class="footer">
+
+        <div class="upperfooter">
+            <div>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Contact US</li>
+                    <li>Shipping And Return Policy</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Police</li>
+                </ul>
+            </div>
+            <div id="follow">
+                <p>Follow us On</p>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+            </div>
+        </div>
+        <div>
+            <hr>
+        </div>
+        <div class="lowerfooter">
+
+            <div class="lfooter">
+                <div>
+                    <p>Copyrigth &COPY; Reserved</p>
+                </div>
+                <div>
+                    <p>Made By</p> <span id="ting">ting</span>
+                    <img id="log" src="https://cdn.live.zoko.io/store/customers/d9b85c58-d794-4956-a18e-c36f838226bb-zo-ko-Icon.svg"
+                        alt="">
+                </div>
+            </div>
         </div>
 
     </div>
 </body>
 
-   
+
 
 
 </html>
