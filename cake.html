@@ -56,44 +56,67 @@
     /* border: 1px solid blue; */
 }
 
-.left {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+.navbar>div {
+    width: 25%;
 
-.left>div {
-    /* border: 1px solid red; */
     height: auto;
-    width: 30%;
-    display: flex;
-
-    align-items: center;
+    border: 1px solid blue;
 }
 
-#shop {
-    width: 100%;
-    font-size: 20px;
-    border-color: none;
-    border: 1px solid rgb(238, 238, 234);
-    background-color: rgb(238, 238, 234);
-    cursor: pointer;
+.leftmenu>ul{
+    display: inline-flex;
+    list-style: none;
+    margin: 20px;
+}
+ .leftmenu>ul>li{
+    
+   
+    margin-left: 30px;
+
+    font-family: sans-serif;
+
+
+} 
+.leftmenu>ul>li>a{
+    text-decoration: none;
+}
+.leftmenu>ul>li>div{
+display: none;
+}
+.leftmenu>ul>li:hover div{
+    display: block;
+    position: absolute;
+    
+    /* margin-top: 15PX; */
+}
+.leftmenu>ul>li:hover div>ul>li{
+    color: green;
+}
+.leftmenu>ul>li>div>ul>li{
+    list-style: none;
+    margin: 20PX;
+    
+    
+}
+.leftmenu>ul>li>div>ul>li>a{
+text-decoration: none;
+}
+.leftmenu>ul>li>div>ul>li>a:hover{
+    color: #437111;
+    
 }
 
-#learn {
-    width: 100%;
-    font-size: 20px;
-    border-color: none;
-    border: 1px solid rgb(238, 238, 234);
-    background-color: rgb(238, 238, 234);
-    cursor: pointer;
+
+
+
+#menubar>i{
+margin-top: 20px;
+margin-left: 20px;
+cursor: pointer;
+font-size: 28px;
+color: black;
+display: none;
 }
-
-.grow {
-
-    font-size: 20px;
-}
-
 .mid>img {
     width: 60%;
     margin-left: 60px;
@@ -369,32 +392,48 @@ hr {
 <div class="navbar">
 
     <div class="left">
-        <div>
-            <select id="shop">
-                <option value="">SHOP</option>
-                <option value="ALL FRUITS">ALL FRUITS</option>
-                <option value="ALL VEGGIES">ALL VEGGIES</option>
-                <option value="FRESH CUTS">FRESH CUTS</option>
-                <option value="FRUITS COMBO">FRUITS COMBO</option>
-                <option value="GIFT BY KIMAYE">GIFT BY KIMAYE</option>
-                <option value="FRUITS SUBSCRIPTION">FRUITS X SUBSCRIPTION</option>
-                <option value="COMMUNITY BUYING">COMMUNITY BUYING</option>
-            </select>
+        <div class="leftmenu">
+            <span id="menubar"><i class="fa-solid fa-bars"></i></span>
+            <ul>
+                <li><a href="">SHOP</a>
+
+                    <div>
+                       
+                        <ul id="list">
+                            <li><a href="fruits.html">ALL FRUITS</a></li>
+                            <li><a href="veggies.html">ALL VEGGIES</a></li>
+                            <li><a href="cake.html">FRESH CUTS</a></li>
+                            <li><a href="fruits.html">FRUIT COMBOS</a></li>
+                            <li><a href="">GIFTS BY KIMAYE</a></li>
+                            <li><a href="">FRUIT X SUBSCRIPTION</a></li>
+                            <li><a href="">COMMUNITY BUYING</a></li>
+                        </ul>
+
+
+                    </div>
+
+                </li>
+                <li><a href="">LEARN</a>
+                
+                    <div>
+                       
+                        <ul id="list">
+                            <li><a href="">OUR STORY</a></li>
+                            <li><a href="">WHY KIMAYE</a></li>
+                            <li><a href="">TRACEBLITY</a></li>
+                            <li><a href="">BEYOND FRUITS</a></li>
+                            
+                        </ul>
+
+
+                
+                
+                </li>
+                <li><a href="">GROW</a></li>
+            </ul>
 
         </div>
-        <div>
-            <select id="learn">
-                <option value="">
-                    <h5>LEARN</h5>
-                </option>
-                <option value="OUR STORY">OUR STORY</option>
-                <option value="WHY KIMAYE">WHY KIMAYE</option>
-                <option value="TRACEBLITY">TRACEBLITY</option>
-                <option value="BYOND FRUITS">BEYOND FRUITS </option>
-            </select>
         </div>
-        <div class="grow">GROW</div>
-    </div>
     <div class="mid">
         <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1614326029" alt="">
     </div>

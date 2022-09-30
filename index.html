@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/bd04bdd829.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap"
-    
         rel="stylesheet">
-    
+
 </head>
 
 <body>
@@ -27,31 +26,48 @@
     <div class="navbar">
 
         <div class="left">
-            <div>
-                <select id="shop">
-                    <option value="">SHOP</option>
-                    <option value="ALL FRUITS">ALL FRUITS</option>
-                    <option value="ALL VEGGIES">ALL VEGGIES</option>
-                    <option value="FRESH CUTS">FRESH CUTS</option>
-                    <option value="FRUITS COMBO">FRUITS COMBO</option>
-                    <option value="GIFT BY KIMAYE">GIFT BY KIMAYE</option>
-                    <option value="FRUITS SUBSCRIPTION">FRUITS X SUBSCRIPTION</option>
-                    <option value="COMMUNITY BUYING">COMMUNITY BUYING</option>
-                </select>
+            <div class="leftmenu">
+                <span id="menubar" ><i id="bars" onclick="myfun" class="fa-solid fa-bars"></i></span>
+                <ul>
+                    <li><a href="">SHOP</a>
+
+                        <div>
+                           
+                            <ul id="list">
+                                <li><a href="">ALL FRUITS</a></li>
+                                <li><a href="">ALL VEGGIES</a></li>
+                                <li><a href="">FRESH CUTS</a></li>
+                                <li><a href="">FRUIT COMBOS</a></li>
+                                <li><a href="">GIFTS BY KIMAYE</a></li>
+                                <li><a href="">FRUIT X SUBSCRIPTION</a></li>
+                                <li><a href="">COMMUNITY BUYING</a></li>
+                            </ul>
+
+
+                        </div>
+
+                    </li>
+                    <li><a href="">LEARN</a>
+                    
+                        <div>
+                           
+                            <ul id="list">
+                                <li><a href="">OUR STORY</a></li>
+                                <li><a href="">WHY KIMAYE</a></li>
+                                <li><a href="">TRACEBLITY</a></li>
+                                <li><a href="">BEYOND FRUITS</a></li>
+                                
+                            </ul>
+
+
+                    
+                    
+                    </li>
+                    <li><a href="">GROW</a></li>
+                </ul>
 
             </div>
-            <div>
-                <select id="learn">
-                    <option value="">
-                        <h5>LEARN</h5>
-                    </option>
-                    <option value="OUR STORY">OUR STORY</option>
-                    <option value="WHY KIMAYE">WHY KIMAYE</option>
-                    <option value="TRACEBLITY">TRACEBLITY</option>
-                    <option value="BYOND FRUITS">BEYOND FRUITS </option>
-                </select>
-            </div>
-            <div class="grow">GROW</div>
+
         </div>
         <div class="mid">
             <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1614326029" alt="">
@@ -91,7 +107,7 @@
             <div>
                 <h1>CAN'T KEEP CALM </h1>
                 <h1>KIMAYE VEGGIES NOW LIVE</h1>
-                <button>Shop Now</button>
+                <a href="veggies.html"><button>Shop Now</button></a>
             </div>
 
         </div>
@@ -112,41 +128,41 @@
     <!-- ......................productsample1 -->
     <div class="sampleline1">
 
-        
-       
+
+
         <div>
 
             <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/recommended-1-min_670x.png?v=1614338437"
                 alt="">
             <h2>ALL FRUITS</h2>
             <p>Pick and choose from a wide range of delicious fruits</p>
-           <a href="fruits.html"><button>Shop Now</button></a> 
-           
-        </div>
-    
+            <a href="fruits.html"><button>Shop Now</button></a>
 
-    
+        </div>
+
+
+
         <div>
-            
+
             <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/category-inage_670x.jpg?v=1659083246"
                 alt="">
             <h2>ALL VEGGIES</h2>
             <p>A handpicked and curated offering in beeter range</p>
             <a href="veggies.html"><button>Shop Now</button></a>
-            
+
         </div>
-    
-    
+
+
         <div>
-            
+
             <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/recommended-3-min_670x.png?v=1614338730"
                 alt="">
             <h2>FRESH CUTS</h2>
             <p>We want to spoon-feed you… quite literally</p>
             <a href="cake.html"><button>Shop Now</button></a>
-            
+
         </div>
-    
+
 
 
     </div>
@@ -342,7 +358,8 @@
                 </div>
                 <div>
                     <p>Made By</p> <span id="ting">ting</span>
-                    <img id="log" src="https://cdn.live.zoko.io/store/customers/d9b85c58-d794-4956-a18e-c36f838226bb-zo-ko-Icon.svg"
+                    <img id="log"
+                        src="https://cdn.live.zoko.io/store/customers/d9b85c58-d794-4956-a18e-c36f838226bb-zo-ko-Icon.svg"
                         alt="">
                 </div>
             </div>
@@ -360,7 +377,17 @@
 <script>
 
 
+function myfun(){
+    let x=document.querySelector("#bars");
 
+    console.log("ghfjh")
+    if(x.style.display=="block"){
+        x.style.display="none";
+
+    }else{
+        x.style.display=="block";
+    }
+}
 
 
 </script>
