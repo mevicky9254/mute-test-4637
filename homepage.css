@@ -227,11 +227,12 @@ p {
 
 }
 
-.sampleline1>div {
+
+.sampleline1>div{
     /* border: 1px solid blue; */
     height: auto;
 
-    text-align: center;
+    text-align:center;
 }
 
 .sampleline1>div>img {
@@ -239,8 +240,9 @@ p {
     border-radius: 30px;
 }
 
-.sampleline1>div>button {
+.sampleline1>div>a>button {
     font-size: 17px;
+    
 
     background: #cd171f;
     padding: 12px 35px;
@@ -249,6 +251,10 @@ p {
     border: 0px solid #cd171f;
     color: white;
     margin-top: 20px;
+    cursor: pointer;
+}
+.sampleline1>div>a>button:hover{
+background-color: #437111;
 }
 
 .sampleline1>div>h2 {
@@ -296,6 +302,9 @@ p {
     border: 0px solid #cd171f;
     color: white;
     margin-top: 20px;
+}
+.sampleline2>div>button:hover{
+background-color: #437111;
 }
 
 .sampleline2>div>h2 {
