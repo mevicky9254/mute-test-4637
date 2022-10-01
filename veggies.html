@@ -56,42 +56,67 @@
     /* border: 1px solid blue; */
 }
 
-.left {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+.navbar>div {
+    width: 25%;
 
-.left>div {
-    /* border: 1px solid red; */
     height: auto;
-    width: 30%;
-    display: flex;
-
-    align-items: center;
+    /* border: 1px solid blue; */
 }
 
-#shop {
-    width: 100%;
-    font-size: 20px;
-    border-color: none;
-    border: 1px solid rgb(238, 238, 234);
-    background-color: rgb(238, 238, 234);
-    cursor: pointer;
+.leftmenu>ul{
+    display: inline-flex;
+    list-style: none;
+    margin: 20px;
+}
+ .leftmenu>ul>li{
+    
+   
+    margin-left: 30px;
+
+    font-family: sans-serif;
+
+
+} 
+.leftmenu>ul>li>a{
+    text-decoration: none;
+}
+.leftmenu>ul>li>div{
+display: none;
+}
+.leftmenu>ul>li:hover div{
+    display: block;
+    position: absolute;
+    
+    /* margin-top: 15PX; */
+}
+.leftmenu>ul>li:hover div>ul>li{
+    color: green;
+}
+.leftmenu>ul>li>div>ul>li{
+    list-style: none;
+    margin: 20PX;
+    
+    
+}
+.leftmenu>ul>li>div>ul>li>a{
+text-decoration: none;
+color: black;
+}
+.leftmenu>ul>li>div>ul>li>a:hover{
+    color: #437111;
+    
 }
 
-#learn {
-    width: 100%;
-    font-size: 20px;
-    border-color: none;
-    border: 1px solid rgb(238, 238, 234);
-    background-color: rgb(238, 238, 234);
-    cursor: pointer;
-}
 
-.grow {
 
-    font-size: 20px;
+
+#menubar>i{
+margin-top: 20px;
+margin-left: 20px;
+cursor: pointer;
+font-size: 28px;
+color: black;
+display: none;
 }
 
 .mid>img {
@@ -154,6 +179,10 @@
 }
 .direct>a:hover{
     color: red;
+}
+#home:hover{
+color: black;
+cursor: pointer;
 }
 .direct>span{
     color: grey;
@@ -304,8 +333,58 @@ hr {
 
 /* ............................responsive......... */
 
+
+
 @media all and (min-width: 451px) and (max-width: 750px) {
-.fruitbox{
+
+    #menubar>i{
+    display: block;
+    margin-top: 9px;
+   }
+    .leftmenu>ul{
+        display: block;
+    }
+    .leftmenu>ul{
+        display: none;
+    }
+    .leftmenu>ul{
+        position: absolute;
+        background-color: #437111;
+        margin-left: -30px;
+        margin-top: 10px;
+
+    }
+    .leftmenu>ul>li{
+        margin: 70px;
+        background-color: #437111;
+    }
+    .leftmenu>ul>li>a{
+        background-color: #437111;
+        color: aliceblue;
+    }
+
+
+    .navbar>div {
+        width: 25%;
+
+        height: auto;
+        /* border: 1px solid blue; */
+    }
+
+    .mid>img {
+        width: 100%;
+        margin-left: -50px;
+    }
+    .right>div:nth-child(1)>div:nth-child(1)>img{
+        margin-left: -50px;
+        width: 150%;
+    }
+    .right>div>div>p{
+        margin-left:-40px ;
+    }
+
+
+    .fruitbox{
     grid-template-columns: repeat(2,1fr);
 }
 
@@ -327,6 +406,61 @@ hr {
 
 /* ....small screen */
 @media all and (min-width: 100px) and (max-width: 450px) {
+    .tagline>p{
+    font-size: 13px;
+}
+   
+   
+    #menubar>i{
+        display: block;
+        margin-top: 2px;
+        
+        
+       }
+        .leftmenu>ul{
+            display: block;
+            
+        }
+        .leftmenu>ul{
+            display: none;
+        }
+        .leftmenu>ul{
+            position: absolute;
+            background-color: #437111;
+            margin-left: -30px;
+            margin-top: 10px;
+    
+        }
+        .leftmenu>ul>li{
+            margin: 50px;
+            background-color: #437111;
+        }
+        .leftmenu>ul>li>a{
+            background-color: #437111;
+            color: aliceblue;
+        }
+
+        .mid>img {
+            width: 100%;
+            margin-left: -40px;
+            margin-bottom: 0px;
+        }
+
+        .right>div:nth-child(1)>div:nth-child(1)>img{
+            margin-left: -50px;
+            width: 180%;
+        }
+        .right>div>div>p{
+            margin-left:-40px ;
+        }
+   
+   
+   
+   
+   
+   
+   
+   
     .fruitbox{
     grid-template-columns: repeat(1,1fr);
 }
@@ -369,31 +503,51 @@ hr {
 <div class="navbar">
 
     <div class="left">
-        <div>
-            <select id="shop">
-                <option value="">SHOP</option>
-                <option value="ALL FRUITS">ALL FRUITS</option>
-                <option value="ALL VEGGIES">ALL VEGGIES</option>
-                <option value="FRESH CUTS">FRESH CUTS</option>
-                <option value="FRUITS COMBO">FRUITS COMBO</option>
-                <option value="GIFT BY KIMAYE">GIFT BY KIMAYE</option>
-                <option value="FRUITS SUBSCRIPTION">FRUITS X SUBSCRIPTION</option>
-                <option value="COMMUNITY BUYING">COMMUNITY BUYING</option>
-            </select>
+       
+        <div class="leftmenu">
+            <span id="menubar"><i class="fa-solid fa-bars"></i></span>
+            <ul>
+                <li><a href="">SHOP</a>
+
+                    <div>
+                       
+                        <ul id="list">
+                            <li><a href="fruits.html">ALL FRUITS</a></li>
+                            <li><a href="veggies.html">ALL VEGGIES</a></li>
+                            <li><a href="cake.html">FRESH CUTS</a></li>
+                            <li><a href="fruits.html">FRUIT COMBOS</a></li>
+                            <li><a href="">GIFTS BY KIMAYE</a></li>
+                            <li><a href="">FRUIT X SUBSCRIPTION</a></li>
+                            <li><a href="">COMMUNITY BUYING</a></li>
+                        </ul>
+
+
+                    </div>
+
+                </li>
+                <li><a href="">LEARN</a>
+                
+                    <div>
+                       
+                        <ul id="list">
+                            <li><a href="">OUR STORY</a></li>
+                            <li><a href="">WHY KIMAYE</a></li>
+                            <li><a href="">TRACEBLITY</a></li>
+                            <li><a href="">BEYOND FRUITS</a></li>
+                            
+                        </ul>
+
+
+                
+                
+                </li>
+                <li><a href="">GROW</a></li>
+            </ul>
 
         </div>
-        <div>
-            <select id="learn">
-                <option value="">
-                    <h5>LEARN</h5>
-                </option>
-                <option value="OUR STORY">OUR STORY</option>
-                <option value="WHY KIMAYE">WHY KIMAYE</option>
-                <option value="TRACEBLITY">TRACEBLITY</option>
-                <option value="BYOND FRUITS">BEYOND FRUITS </option>
-            </select>
-        </div>
-        <div class="grow">GROW</div>
+
+
+
     </div>
     <div class="mid">
         <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1614326029" alt="">
@@ -426,7 +580,7 @@ hr {
 
 <div class="direct">
 
-    <i class="fa-solid fa-house-chimney"></i>&nbsp;&nbsp;  <a href="homepage.html">Home</a> <span>/friuts</span><br><br>
+    <a id="home" href="index.html"><i class="fa-solid fa-house-chimney"></i></a>&nbsp;&nbsp;  <a href="index.html">Home</a> <span>/Veggies</span><br><br>
     <p>Showing <span></span> results</p>
 
 </div>
@@ -577,6 +731,25 @@ console.log(card);
 fruitbox.append(card);
 
 })
+
+
+let x=document.querySelector("#menubar>i");
+
+
+x.addEventListener("click",myfun);
+
+function myfun(){
+    console.log("hhjfjh")
+let y=document.querySelector(".leftmenu>ul");
+console.log(y);
+if(y.style.display=="block"){
+console.log("True")
+y.style.display="none";
+}else{
+
+y.style.display="block";
+}
+}
 
 
 

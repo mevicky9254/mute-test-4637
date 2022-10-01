@@ -38,43 +38,64 @@
     /* border: 1px solid blue; */
 }
 
-.left {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.leftmenu>ul{
+    display: inline-flex;
+    list-style: none;
+    margin: 20px;
+}
+ .leftmenu>ul>li{
+    
+   
+    margin-left: 30px;
+
+    font-family: sans-serif;
+
+
+} 
+.leftmenu>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+.leftmenu>ul>li>div{
+display: none;
+}
+.leftmenu>ul>li:hover div{
+    display: block;
+    position: absolute;
+    
+    /* margin-top: 15PX; */
+}
+.leftmenu>ul>li:hover div>ul>li{
+    color: green;
+}
+.leftmenu>ul>li>div>ul>li{
+    list-style: none;
+    margin: 20PX;
+    
+    
+}
+.leftmenu>ul>li>div>ul>li>a{
+text-decoration: none;
+color: black;
+}
+.leftmenu>ul>li>div>ul>li>a:hover{
+    color: #437111;
+    
 }
 
-.left>div {
-    /* border: 1px solid red; */
-    height: auto;
-    width: 30%;
-    display: flex;
 
-    align-items: center;
+
+
+#menubar>i{
+margin-top: 20px;
+margin-left: 20px;
+cursor: pointer;
+font-size: 28px;
+color: black;
+display: none;
 }
 
-#shop {
-    width: 100%;
-    font-size: 20px;
-    border-color: none;
-    border: 1px solid rgb(238, 238, 234);
-    background-color: rgb(238, 238, 234);
-    cursor: pointer;
-}
 
-#learn {
-    width: 100%;
-    font-size: 20px;
-    border-color: none;
-    border: 1px solid rgb(238, 238, 234);
-    background-color: rgb(238, 238, 234);
-    cursor: pointer;
-}
-
-.grow {
-
-    font-size: 20px;
-}
 
 .mid>img {
     width: 60%;
@@ -711,8 +732,11 @@ hr {
     border-radius: 20px;
     padding: 10px;
 }
+.banner>div>div>a{
+    background-color: #183D1C;
+}
 
-.banner>div>div>button {
+.banner>div>div>a>button {
     font-size: 17px;
 
     background: #fcbe03;
@@ -726,6 +750,10 @@ hr {
 
 }
 
+.banner>div>div>a>button:hover{
+    background-color:green
+}
+
 
 
 
@@ -733,16 +761,54 @@ hr {
 
 @media all and (min-width: 451px) and (max-width: 750px) {
 
+  
+  
+    #menubar>i{
+    display: block;
+    margin-top: 9px;
+   }
+    .leftmenu>ul{
+        display: block;
+    }
+    .leftmenu>ul{
+        display: none;
+    }
+    .leftmenu>ul{
+        position: absolute;
+        background-color: #437111;
+        margin-left: -30px;
+        margin-top: 10px;
+
+    }
+    .leftmenu>ul>li{
+        margin: 70px;
+        background-color: #437111;
+    }
+    .leftmenu>ul>li>a{
+        background-color: #437111;
+        color: aliceblue;
+    }
+
+.navbar{
+    margin-top: 55px;
+}
     .navbar>div {
         width: 25%;
 
         height: auto;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
     }
 
     .mid>img {
-        width: 70%;
-        margin-left: 60px;
+        width: 100%;
+        margin-left: -50px;
+    }
+    .right>div:nth-child(1)>div:nth-child(1)>img{
+        margin-left: -50px;
+        width: 150%;
+    }
+    .right>div>div>p{
+        margin-left:-40px ;
     }
 
     .sampleline1 {
@@ -847,6 +913,53 @@ font-size: 30px;
 
 /* Small screens */
 @media all and (min-width: 100px) and (max-width: 450px) {
+.tagline>p{
+    font-size: 13px;
+}
+
+    #menubar>i{
+        display: block;
+        margin-top: 2px;
+        
+        
+       }
+        .leftmenu>ul{
+            display: block;
+            
+        }
+        .leftmenu>ul{
+            display: none;
+        }
+        .leftmenu>ul{
+            position: absolute;
+            background-color: #437111;
+            margin-left: -30px;
+            margin-top: 10px;
+    
+        }
+        .leftmenu>ul>li{
+            margin: 50px;
+            background-color: #437111;
+        }
+        .leftmenu>ul>li>a{
+            background-color: #437111;
+            color: aliceblue;
+        }
+
+        .mid>img {
+            width: 100%;
+            margin-left: -40px;
+            margin-bottom: 0px;
+        }
+
+        .right>div:nth-child(1)>div:nth-child(1)>img{
+            margin-left: -50px;
+            width: 180%;
+        }
+        .right>div>div>p{
+            margin-left:-40px ;
+        }
+
 
 .banner{
 flex-wrap: wrap;
