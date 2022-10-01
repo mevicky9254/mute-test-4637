@@ -631,7 +631,8 @@ hr {
 }
 
 .lfooter>div>img {
-    width: 50px;
+    width: 40px;
+    border-radius: 15px;
 }
 
 .lfooter>div>p {
@@ -673,6 +674,16 @@ hr {
 
 #follow {
     background-color: #437111;
+}
+#follow>i:hover{
+    cursor: pointer;
+}
+#follow>p:hover{
+    color: red;
+}
+.upperfooter>div>ul>li:hover{
+    color: red;
+    cursor: pointer;
 }
 
 /* .......banner...................................... */
@@ -1069,6 +1080,27 @@ font-size: 25px;
     .lfooter>div:nth-child(2) {
         flex-wrap: wrap;
     }
+
+    #ting{
+        font-size: 20px;
+    }
+    #follow>i:hover{
+        cursor: pointer;
+    }
+    #follow>p:hover{
+        color: red;
+    }
+    .upperfooter>div>ul>li:hover{
+        color: red;
+        cursor: pointer;
+    }
+
+
+
+    .lfooter>div>img {
+width: 30px;
+border-radius: 10px;
+}
 }
 
 /* ...........proof..................... */
