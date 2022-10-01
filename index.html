@@ -27,17 +27,17 @@
 
         <div class="left">
             <div class="leftmenu">
-                <span id="menubar" ><i id="bars" onclick="myfun" class="fa-solid fa-bars"></i></span>
+                <span id="menubar" ><i class="fa-solid fa-bars"></i></span>
                 <ul>
                     <li><a href="">SHOP</a>
 
                         <div>
                            
                             <ul id="list">
-                                <li><a href="">ALL FRUITS</a></li>
-                                <li><a href="">ALL VEGGIES</a></li>
-                                <li><a href="">FRESH CUTS</a></li>
-                                <li><a href="">FRUIT COMBOS</a></li>
+                                <li><a href="fruits.html">ALL FRUITS</a></li>
+                                <li><a href="veggies.html">ALL VEGGIES</a></li>
+                                <li><a href="cake.html">FRESH CUTS</a></li>
+                                <li><a href="fruits.html">FRUIT COMBOS</a></li>
                                 <li><a href="">GIFTS BY KIMAYE</a></li>
                                 <li><a href="">FRUIT X SUBSCRIPTION</a></li>
                                 <li><a href="">COMMUNITY BUYING</a></li>
@@ -114,6 +114,7 @@
         <div>
             <img src="https://www.freepnglogos.com/uploads/vegetables-png/buy-high-quality-organic-vegetables-and-fruits-online-7.png"
                 alt="">
+             
         </div>
     </div>
 
@@ -377,17 +378,29 @@
 <script>
 
 
-function myfun(){
-    let x=document.querySelector("#bars");
 
-    console.log("ghfjh")
-    if(x.style.display=="block"){
-        x.style.display="none";
+    let x=document.querySelector("#menubar>i");
 
-    }else{
-        x.style.display=="block";
-    }
+
+    x.addEventListener("click",myfun);
+
+    function myfun(){
+        
+        console.log("hhjfjh")
+let y=document.querySelector(".leftmenu>ul");
+console.log(y);
+if(y.style.display=="block"){
+    console.log("True")
+    y.style.display="none";
+}else{
+
+    y.style.display="block";
 }
+    }
+
+    
+    
+
 
 
 </script>

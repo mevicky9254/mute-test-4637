@@ -60,7 +60,7 @@
     width: 25%;
 
     height: auto;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .leftmenu>ul{
@@ -100,6 +100,7 @@ display: none;
 }
 .leftmenu>ul>li>div>ul>li>a{
 text-decoration: none;
+color: black;
 }
 .leftmenu>ul>li>div>ul>li>a:hover{
     color: #437111;
@@ -184,6 +185,10 @@ display: none;
 }
 .direct>p{
     color: grey;
+}
+#home:hover{
+    color: black;
+    cursor: pointer;
 }
 .fruitbox{
     width: 90%;
@@ -329,7 +334,55 @@ hr {
 /* ............................responsive......... */
 
 @media all and (min-width: 451px) and (max-width: 750px) {
-.fruitbox{
+
+    #menubar>i{
+    display: block;
+    margin-top: 9px;
+   }
+    .leftmenu>ul{
+        display: block;
+    }
+    .leftmenu>ul{
+        display: none;
+    }
+    .leftmenu>ul{
+        position: absolute;
+        background-color: #437111;
+        margin-left: -30px;
+        margin-top: 10px;
+
+    }
+    .leftmenu>ul>li{
+        margin: 70px;
+        background-color: #437111;
+    }
+    .leftmenu>ul>li>a{
+        background-color: #437111;
+        color: aliceblue;
+    }
+
+
+    .navbar>div {
+        width: 25%;
+
+        height: auto;
+        /* border: 1px solid blue; */
+    }
+
+    .mid>img {
+        width: 100%;
+        margin-left: -50px;
+    }
+    .right>div:nth-child(1)>div:nth-child(1)>img{
+        margin-left: -50px;
+        width: 150%;
+    }
+    .right>div>div>p{
+        margin-left:-40px ;
+    }
+
+
+    .fruitbox{
     grid-template-columns: repeat(2,1fr);
 }
 
@@ -351,6 +404,61 @@ hr {
 
 /* ....small screen */
 @media all and (min-width: 100px) and (max-width: 450px) {
+    .tagline>p{
+    font-size: 13px;
+}
+    
+    #menubar>i{
+        display: block;
+        margin-top: 2px;
+        
+        
+       }
+        .leftmenu>ul{
+            display: block;
+            
+        }
+        .leftmenu>ul{
+            display: none;
+        }
+        .leftmenu>ul{
+            position: absolute;
+            background-color: #437111;
+            margin-left: -30px;
+            margin-top: 10px;
+    
+        }
+        .leftmenu>ul>li{
+            margin: 50px;
+            background-color: #437111;
+        }
+        .leftmenu>ul>li>a{
+            background-color: #437111;
+            color: aliceblue;
+        }
+
+        .mid>img {
+            width: 100%;
+            margin-left: -40px;
+            margin-bottom: 0px;
+        }
+
+        .right>div:nth-child(1)>div:nth-child(1)>img{
+            margin-left: -50px;
+            width: 180%;
+        }
+        .right>div>div>p{
+            margin-left:-40px ;
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     .fruitbox{
     grid-template-columns: repeat(1,1fr);
 }
@@ -465,7 +573,7 @@ hr {
 </div>
 
 <div class="direct">
-    <i class="fa-solid fa-house-chimney"></i>&nbsp;&nbsp;  <a href="homepage.html">Home</a> <span>/friuts</span><br><br>
+    <a id="home" href="index.html"><i class="fa-solid fa-house-chimney"></i></a>&nbsp;&nbsp;  <a href="index.html">Home</a> <span>/friuts</span><br><br>
     <p>Showing <span></span> result</p>
 
 
@@ -653,6 +761,25 @@ console.log(card);
 fruitbox.append(card);
 
 })
+
+
+let x=document.querySelector("#menubar>i");
+
+
+x.addEventListener("click",myfun);
+
+function myfun(){
+    console.log("hhjfjh")
+let y=document.querySelector(".leftmenu>ul");
+console.log(y);
+if(y.style.display=="block"){
+console.log("True")
+y.style.display="none";
+}else{
+
+y.style.display="block";
+}
+}
 
 
 
